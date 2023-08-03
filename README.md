@@ -7,6 +7,39 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Directory Structure
+
+```
+src/
+├── App.tsx
+├── common/
+│   ├── components/
+│   └── layouts/
+│       ├── XXXLayout.tsx
+│       ├── index.ts
+├── features/
+│   ├── XXX/
+│   │   ├── atoms/
+│   │   │   └── index.ts
+│   │   ├── components/
+│   │   │   ├── XXX.tsx
+│   │   │   └── index.tsx
+│   │   └── hooks/
+│   │       ├── useXXX.ts
+│   │       └── index.ts
+│   └── XXX/
+├── main.tsx
+├── pages/
+│   ├── XXXPage.tsx
+│   └── index.ts
+├── routes/
+│   └── index.tsx
+├── tailwind.css
+├── utils/
+│   └── scripts/
+└── vite-env.d.ts
+```
+
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
