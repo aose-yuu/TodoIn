@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import { HeaderSidebarLayout } from '@/common/layouts/HeaderSidebarLayout';
 import { ViewPortLayout } from '@/common/layouts/ViewPortLayout';
-import { DarkMode, DarkModeCheckBox } from '@/features/darkMode/components';
+import { DarkMode } from '@/features/darkMode/components';
 
 export const Router: React.FC = () => {
   return (
@@ -9,7 +10,10 @@ export const Router: React.FC = () => {
       <ViewPortLayout>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<DarkModeCheckBox />} />
+            <Route
+              path="/"
+              element={<HeaderSidebarLayout>aiueo</HeaderSidebarLayout>}
+            />
           </Routes>
         </BrowserRouter>
       </ViewPortLayout>
